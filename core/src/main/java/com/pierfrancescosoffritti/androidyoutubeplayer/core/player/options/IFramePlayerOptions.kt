@@ -141,7 +141,7 @@ class IFramePlayerOptions private constructor(private val playerOptions: JSONObj
             return this
         }
 
-        private fun addString(key: String, value: String) {
+        fun addString(key: String, value: String) {
             try {
                 builderOptions.put(key, value)
             } catch (e: JSONException) {
@@ -150,7 +150,7 @@ class IFramePlayerOptions private constructor(private val playerOptions: JSONObj
 
         }
 
-        private fun addInt(key: String, value: Int) {
+        fun addInt(key: String, value: Int) {
             try {
                 builderOptions.put(key, value)
             } catch (e: JSONException) {
